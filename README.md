@@ -1,13 +1,17 @@
 ![PyPI](https://img.shields.io/pypi/v/pyreptasks)
 
-Header
-======
+Description
+===========
 
 This Python library provides the user with some tools useful to automate coding of repetitive tasks.
 
-.. code-block:: bash
+Installation
+============
 
 pip install pyreptasks
+
+Versions
+========
 
 Version 1.0.0
 
