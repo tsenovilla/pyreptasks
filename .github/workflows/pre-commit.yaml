@@ -1,0 +1,11 @@
+name: pre-commit
+on: [pull_request, push, workflow_dispatch]
+
+jobs:
+  format: 
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - name: Formatting
+        run: pre-commit

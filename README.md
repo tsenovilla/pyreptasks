@@ -12,6 +12,17 @@ To install this package use : pip install pyreptasks
 
 To import all the classes and methods of the package in your Python projects: from pyreptasks import *
 
+Developing
+==========
+
+To ensure that you have all the needed dependencies installed in your local environment, install the requirements:
+
+% pip install -r requirements.txt
+
+This project uses "black" to format code. We support "pre-commit" to ensure this formatting has been run. If you have installed the requirements, you should have these packages already installed. Please, set up the commit hooks in your local environment:
+
+% pre-commit install
+
 Testing
 =======
 
