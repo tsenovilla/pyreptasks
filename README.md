@@ -18,3 +18,11 @@ Versions
 Version 1.0.0
 
 - New module switch.py: Contains the class Switch, allowing the user to skip defining a switch structure.
+
+
+Other
+=====
+
+Author: Tomás Senovilla Polo
+Email : tspscgs@gmail.com
+License: pyreptasks is available under the MIT license. See LICENSE.txt for more information.
