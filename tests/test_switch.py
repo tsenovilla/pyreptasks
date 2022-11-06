@@ -1,5 +1,7 @@
 # These tests are designed to proof that the Switch class acts at it is attended.
 
+# Import of the switch class
+
 from pyreptasks.switch import Switch
 
 
