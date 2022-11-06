@@ -1,4 +1,11 @@
+.. image:: https://img.shields.io/pypi/v/pyreptasks
+   :alt: PyPI
+
 This Python library provides the user with some tools useful to automate coding of repetitive tasks.
+
+.. code-block:: bash
+
+pip install pyreptasks
 
 Version 1.0.0
 
