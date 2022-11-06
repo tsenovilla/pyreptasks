@@ -24,5 +24,7 @@ Other
 =====
 
 Author: Tomás Senovilla Polo
+
 Email : tspscgs@gmail.com
+
 License: pyreptasks is available under the MIT license. See LICENSE.txt for more information.
