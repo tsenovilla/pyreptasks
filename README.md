@@ -1,6 +1,7 @@
 ![PyPI](https://img.shields.io/pypi/v/pyreptasks)
 [![CI](https://github.com/tsenovilla/pyreptasks/actions/workflows/ci.yaml/badge.svg)](https://github.com/tsenovilla/pyreptasks/actions/workflows/ci.yaml)
 [![pre-commit](https://github.com/tsenovilla/pyreptasks/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/tsenovilla/pyreptasks/actions/workflows/pre-commit.yaml)
+![Codecov](https://img.shields.io/codecov/c/gh/tsenovilla/pyreptasks)
 
 
 Description
