@@ -27,6 +27,8 @@ This project uses "black" to format code. We support "pre-commit" to ensure this
 
 % pre-commit install
 
+"Codecov" is set up for this project, so for any push or pull request you may check the code coverage report at https://app.codecov.io/gh/tsenovilla/pyreptasks. 
+
 Testing
 =======
 
