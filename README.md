@@ -16,6 +16,8 @@ To install this package use : pip install pyreptasks
 
 To import all the classes and methods of the package in your Python projects: from pyreptasks import *
 
+You may find examples of usage in the folder "examples".
+
 Developing
 ==========
 
@@ -46,7 +48,7 @@ To run all the tests, go to the repository where you have stored the folder "tes
 
 In the case that you would like to run only a specific test, select it with pytest:
 
-% pytest tests/test_switch.py
+% pytest tests/test_switch_v1_0_0.py
 
 Versions log
 ============
