@@ -3,7 +3,12 @@ on: [pull_request, push, workflow_dispatch]
 
 jobs:
   format: 
-    runs-on: macos-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: true
+      matrix:
+        os: ["ubuntu-latest", "windows-latest", "macos-12"]
+        python-version: ["3.8","3.9"]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
