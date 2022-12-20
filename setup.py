@@ -3,7 +3,7 @@ from git_setups import versioneer
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
-with open("git_setups/requirements.txt", "r") as fh:
+with open("others/requirements.txt", "r") as fh:
     requirements = [line.strip() for line in fh]
 
 setuptools.setup(

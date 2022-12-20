@@ -1,5 +1,0 @@
-[run]
-omit = 
-    setup.py
-    git_setups/versioneer.py
-    pyreptasks/_version.py

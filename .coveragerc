@@ -1,0 +1,6 @@
+[run]
+omit = 
+    setup.py
+    others/versioneer.py
+    pyreptasks/_version.py
+    pyreptasks/__init__.py
