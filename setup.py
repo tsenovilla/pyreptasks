@@ -10,7 +10,7 @@ setuptools.setup(
     name="pyreptasks",
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
-    url="https://github.com/tsenovilla/repetitive-tasks",
+    url="https://github.com/tsenovilla/pyreptasks",
     author="Tomás Senovilla Polo",
     author_email="tspscgs@gmail.com",
     description="This Python library provides the user with some tools useful to automate coding of repetitive tasks",
