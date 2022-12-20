@@ -2,5 +2,5 @@
 omit = 
     setup.py
     others/versioneer.py
-    pyreptasks/_version.py
-    pyreptasks/__init__.py
+    src/_version.py
+    src/__init__.py
