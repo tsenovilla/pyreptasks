@@ -1,5 +1,5 @@
 import setuptools
-from git_setups import versioneer
+from others import versioneer
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
