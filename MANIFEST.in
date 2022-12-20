@@ -1,7 +1,0 @@
-include README.md
-include LICENSE.txt
-include requirements.txt
-graft pyreptasks
-recursive-exclude * *.py[co]
-include versioneer.py
-include pyreptasks/_version.py
