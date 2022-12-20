@@ -23,7 +23,7 @@ Developing
 
 To ensure that you have all the needed dependencies installed in your local environment, install the requirements:
 
-% pip install -r requirements.txt
+% pip install -r others/requirements.txt
 
 This project uses "black" to format code. We support "pre-commit" to ensure this formatting has been run. If you have installed the requirements, you should have these packages already installed. Please, set up the commit hooks in your local environment:
 
@@ -38,7 +38,7 @@ This project uses "pytest" to run the tests defined in the folder "tests".
 
 To run the tests, install the test dependencies (this includes pytest, if you do not have it yet):
 
-% pip install -r requirements_test.txt
+% pip install -r others/requirements_test.txt
 
 To run all the tests, go to the repository where you have stored the folder "tests" and run:
 
