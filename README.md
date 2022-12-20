@@ -21,13 +21,11 @@ You may find examples of usage in the folder "examples".
 Developing
 ==========
 
-To ensure that you have all the needed dependencies installed in your local environment, install the requirements:
+If you want to contribute, to ensure that you have all the needed dependencies installed in your local environment, install the requirements described in others/requirements.txt. To do so, you can download the file or just copy it into a "requirements.txt" file then do
 
 % pip install -r others/requirements.txt
 
-This project uses "black" to format code. We support "pre-commit" to ensure this formatting has been run. If you have installed the requirements, you should have these packages already installed. Please, set up the commit hooks in your local environment:
-
-% pre-commit install
+This project uses "black" to format code. We support "pre-commit" to ensure this formatting has been run. If you have installed the requirements, you should have these packages already installed.
 
 "Codecov" is set up for this project, so for any push or pull request you may check the code coverage report at https://app.codecov.io/gh/tsenovilla/pyreptasks. 
 
@@ -36,15 +34,13 @@ Testing
 
 This project uses "pytest" to run the tests defined in the folder "tests". 
 
-To run the tests, install the test dependencies (this includes pytest, if you do not have it yet):
+To run the tests localy, install the test requirements described in others/requirements_test.txt. To do so, you can download the file or just copy it into a "requirements_test.txt" then do
 
 % pip install -r others/requirements_test.txt
 
 To run all the tests, go to the repository where you have stored the folder "tests" and run:
 
 % pytest
-
-   === 10 passed in 0.03s ===
 
 In the case that you would like to run only a specific test, select it with pytest:
 
