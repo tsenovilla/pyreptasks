@@ -2,3 +2,4 @@
 versioneer.py
 .coveragerc
 MANIFEST.in
+.pre-commit-config.yaml
