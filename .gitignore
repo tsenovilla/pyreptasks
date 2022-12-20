@@ -1,5 +1,1 @@
 .DS_Store
-versioneer.py
-.coveragerc
-MANIFEST.in
-.pre-commit-config.yaml
