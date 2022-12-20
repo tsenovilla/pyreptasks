@@ -1,4 +1,4 @@
-from pyreptasks.switch import Switch
+from src.switch import Switch
 
 __all__ = ["Switch"]
 
