@@ -3,4 +3,3 @@ omit =
     setup.py
     git_setups/versioneer.py
     pyreptasks/_version.py
-    pyreptasks/__init__.py
