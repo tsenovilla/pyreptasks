@@ -383,7 +383,7 @@ def get_config_from_root(root):
     # the top of versioneer.py for instructions on writing your setup.cfg .
     root = Path(root)
     pyproject_toml = root / "pyproject.toml"
-    setup_cfg = "setup.cfg"
+    setup_cfg = root / "git_setups/setup.cfg"
     section = None
     if pyproject_toml.exists() and have_tomllib:
         try:
@@ -2165,7 +2165,7 @@ def do_setup():
     except (OSError, configparser.NoSectionError, configparser.NoOptionError) as e:
         if isinstance(e, (OSError, configparser.NoSectionError)):
             print("Adding sample versioneer config to setup.cfg", file=sys.stderr)
-            with open("setup.cfg", "a") as f:
+            with open(os.path.join(root, "setup.cfg"), "a") as f:
                 f.write(SAMPLE_CONFIG)
         print(CONFIG_ERROR, file=sys.stderr)
         return 1

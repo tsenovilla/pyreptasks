@@ -1,9 +1,9 @@
 import setuptools
-from config import versioneer
+from git_setups import versioneer
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
-with open("config/requirements.txt", "r") as fh:
+with open("git_setups/requirements.txt", "r") as fh:
     requirements = [line.strip() for line in fh]
 
 setuptools.setup(
