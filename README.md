@@ -81,6 +81,15 @@ Releases are published automatically when a tag is pushed to GitHub:
 
   git push upstream --tags
 
+Workflows
+=========
+
+- CI (Continuous Integration): This workflow runs the test files contained in "tests" using pytest. It also runs code coverage to ensure the whole code is being used.
+
+- Pre-commit: This workflow ensures that all Python files respect PEP 8 format, via black
+
+- Build distribution: This workflow ensures that each time a push is made, the project pushed is in a packageable state. Furthermore, if a tag is pushed, the workflow publishes the package on PyPI.
+
 
 Other
 =====
