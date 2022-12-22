@@ -1,6 +1,4 @@
 [run]
 omit = 
     setup.py
-    others/versioneer.py
-    src/_version.py
     src/__init__.py
