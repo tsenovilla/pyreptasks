@@ -54,16 +54,18 @@ Version 1.0.0
 
 - New module switch.py: Contains the class Switch, allowing the user to skip defining a switch structure.
 
-Version 2.0.0
+Version 2.0.1
 -------------
 
 - Update of module switch.py: From this version, integer_switch is not a parameter anymore. This parameter was used in 
   a Switch object to indicate that the switch had to contain only integer keys. The parameter is deleted due to its
   functionality was not actually relevant. 
 
-- Switch functionality's examples and tests updates to fit with the new version.
+- Switch examples and tests updates to fit with the new version.
 
 - Minor changes: Use of setuptools_scm (https://github.com/pypa/setuptools_scm/) package to manage version control instead of versioneer, used in the previous version. This also allows us to get rid of some configuration files in order to get a simpler package. 
+
+NOTE: The use of version name 2.0.1 instead of 2.0.0 is due to setuptools_scm needs a non-zero last number.
 
 Other
 =====
