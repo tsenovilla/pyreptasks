@@ -7,23 +7,23 @@ class Switch:
     Both arguments must be lists of the same length. REMARK: The orders of the lists are important, the first key will execute the first action,
     the second key will execute the second action, and so on.
 
-    There are also three optional arguments that may be provided when creating the objetc:
+    There are also three optional arguments that may be provided when creating the object:
 
-    \t - use_default_case: <class 'bool'>. Used to determine if a default case is necessary for the switch. By default its value is False.
-    \t - default_case: The action to perform in the default case if use_default_case == True.
-    \t - integer_switch: <class 'bool'>. Mostly, switchs use integers as keys. If this is the case, the class will check whether the choices selected
-    \t   for the switch are integers, and throw an exception otherwise. By default its value is True.
+     - use_default_case: <class 'bool'>. Used to determine if a default case is necessary for the switch. By default its value is False.
+     - default_case: The action to perform in the default case if use_default_case == True.
+     - integer_switch: <class 'bool'>. Mostly, switchs use integers as keys. If this is the case, the class will check whether the choices selected
+       for the switch are integers, and throw an exception otherwise. By default its value is True.
 
     ATTRIBUTES:
 
-    \t - options: A dictionary containing the pairs keys/values.
-    \t - use_default_case: A boolean used to indicate if an action should be performed in a default case.
-    \t - default_case: If use_default_case == True, the action to perform in the default case.
-    \t - integer_switch: A boolean used to indicate whether the switch takes integer arguments.
+     - options: A dictionary containing the pairs keys/values.
+     - use_default_case: A boolean used to indicate if an action should be performed in a default case.
+     - default_case: If use_default_case == True, the action to perform in the default case.
+     - integer_switch: A boolean used to indicate whether the switch takes integer arguments.
 
     METHODS:
 
-    \t - exec: This method takes the desired choice as argument and returns the corresponding switch value.
+     - exec: This method takes the desired choice as argument and returns the corresponding switch value.
     """
 
     def __init__(
