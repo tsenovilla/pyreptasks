@@ -65,6 +65,26 @@ Version 2.0.0
 
 - Minor changes: Use of setuptools_scm (https://github.com/pypa/setuptools_scm/) package to manage version control instead of versioneer, used in the previous version. This also allows us to get rid of some configuration and version control files, in order to get a simpler package. 
 
+- Creation of release.yaml to automate releases when a new tag is pushed to GitHub. 
+
+Releasing
+=========
+
+Releases are published automatically when a tag is pushed to GitHub.
+
+.. code-block:: bash
+
+  #Set next version number
+  export RELEASE=x.x.x
+
+  #Create tags
+  git commit --allow-empty -m "Release $RELEASE"
+  git tag -a $RELEASE -m "Version $RELEASE"
+
+  #Push
+  git push upstream --tags
+
+
 Other
 =====
 
