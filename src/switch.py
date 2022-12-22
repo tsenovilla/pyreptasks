@@ -11,15 +11,12 @@ class Switch:
 
      - use_default_case: <class 'bool'>. Used to determine if a default case is necessary for the switch. By default its value is False.
      - default_case: The action to perform in the default case if use_default_case == True.
-     - integer_switch: <class 'bool'>. Mostly, switchs use integers as keys. If this is the case, the class will check whether the choices selected
-       for the switch are integers, and throw an exception otherwise. By default its value is True.
 
     ATTRIBUTES:
 
      - options: A dictionary containing the pairs keys/values.
      - use_default_case: A boolean used to indicate if an action should be performed in a default case.
      - default_case: If use_default_case == True, the action to perform in the default case.
-     - integer_switch: A boolean used to indicate whether the switch takes integer arguments.
 
     METHODS:
 
@@ -32,7 +29,6 @@ class Switch:
         actions: list,
         use_default_case: bool = False,
         default_case=None,
-        integer_switch: bool = True,
     ) -> None:
         # Check that the type of the arguments are correct.
         if keys.__class__ != list:
@@ -42,10 +38,6 @@ class Switch:
         if use_default_case.__class__ != bool:
             raise ValueError(
                 "set use_default_case = True if you are interested in using a default case for the switch."
-            )
-        if integer_switch.__class__ != bool:
-            raise ValueError(
-                "set integer_switch = True if you need a switch taking integer arguments."
             )
         # Check that there are as much actions as keys for the switch.
         if len(keys) != len(actions):
@@ -58,16 +50,11 @@ class Switch:
             self.options[list(self.options.keys())[i]] = actions[i]
         self.use_default_case = use_default_case
         self.default_case = default_case
-        self.integer_switch = integer_switch
 
     def exec(self, choice):
         """
         Returns the selected choice of the switch.
         """
-        # If the switch is integer, check that the choice provided is integer.
-        if self.integer_switch and choice.__class__ != int:
-            raise ValueError("in an indexed switch, the choice must be an integer.")
-        # Output
         if self.use_default_case:
             return self.options.get(choice, self.default_case)
         else:

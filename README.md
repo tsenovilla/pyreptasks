@@ -21,7 +21,7 @@ You may find examples of usage in the folder "examples".
 Developing
 ==========
 
-If you want to contribute, to ensure that you have all the needed dependencies installed in your local environment, install the requirements described in others/requirements.txt. To do so, you can download the file or just copy it into a "requirements.txt" file then do
+If you want to contribute, to ensure that you have all the needed dependencies installed in your local environment, install the requirements described in requirements.txt. To do so, you can download the file or just copy it into a "requirements.txt" file then do
 
 % pip install -r requirements.txt
 
@@ -34,9 +34,9 @@ Testing
 
 This project uses "pytest" to run the tests defined in the folder "tests". 
 
-To run the tests localy, install the test requirements described in others/requirements_test.txt. To do so, you can download the file or just copy it into a "requirements_test.txt" then do
+To run the tests localy, install the test requirements described in tests_requirements.txt. To do so, you can download the file or just copy it into a "tests_requirements.txt" then do
 
-% pip install -r requirements_test.txt
+% pip install -r test_requirements.txt
 
 To run all the tests, go to the repository where you have stored the folder "tests" and run:
 
@@ -44,7 +44,7 @@ To run all the tests, go to the repository where you have stored the folder "tes
 
 In the case that you would like to run only a specific test, select it with pytest:
 
-% pytest tests/test_switch_v1_0_0.py
+% pytest tests/test_switch.py
 
 Versions log
 ============
@@ -54,6 +54,16 @@ Version 1.0.0
 
 - New module switch.py: Contains the class Switch, allowing the user to skip defining a switch structure.
 
+Version 2.0.0
+-------------
+
+- Update of module switch.py: From this version, integer_switch is not a parameter anymore. This parameter was used in 
+  a Switch object to indicate that the switch had to contain only integer keys. The parameter is deleted due to its
+  functionality was not actually relevant. 
+
+- Switch functionality's examples and tests updates to fit with the new version.
+
+- Minor changes: Use of setuptools_scm (https://github.com/pypa/setuptools_scm/) package to manage version control instead of versioneer, used in the previous version. This also allows us to get rid of some configuration files in order to get a simpler package. 
 
 Other
 =====

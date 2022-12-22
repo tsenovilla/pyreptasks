@@ -1,15 +1,14 @@
 import setuptools
-from others import versioneer
+from setuptools_scm import get_version
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
-with open("others/requirements.txt", "r") as fh:
+with open("requirements.txt", "r") as fh:
     requirements = [line.strip() for line in fh]
 
 setuptools.setup(
     name="pyreptasks",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version=get_version(),
     url="https://github.com/tsenovilla/pyreptasks",
     author="Tomás Senovilla Polo",
     author_email="tspscgs@gmail.com",
