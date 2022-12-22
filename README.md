@@ -65,8 +65,6 @@ Version 2.0.1
 
 - Minor changes: Use of setuptools_scm (https://github.com/pypa/setuptools_scm/) package to manage version control instead of versioneer, used in the previous version. This also allows us to get rid of some configuration files in order to get a simpler package. 
 
-NOTE: The use of version name 2.0.1 instead of 2.0.0 is due to setuptools_scm needs a non-zero last number.
-
 Other
 =====
 
