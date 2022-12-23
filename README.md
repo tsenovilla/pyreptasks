@@ -120,4 +120,4 @@ Email : tspscgs@gmail.com
 
 License: pyreptasks is available under the MIT license. See LICENSE.txt for more information.
 
-If you have in mind some functionality deserving to be included in "pyreptasks", let me know it! I will be happy to include it in a new version :smile:
+If you have in mind some functionality deserving to be included in "pyreptasks", let me know it! I will be happy to include it in future releases :smile: 
