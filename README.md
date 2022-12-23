@@ -81,7 +81,7 @@ Version 2.0.0
 Version 2.0.1
 -------------
 
-- Bug fix: The version 2.0.0 changed the folder's name containing the source code, named "pyreptasks", to "src", without creating a "pyreptasks" package inside. This change created a conflict when importing the package, as its name was not anymore "pyreptasks" but "src". This new version solves that oblivion by creating a Python package "pyreptasks" inside the "src" folder. 
+- Bug fix: The version 2.0.0 changed the folder's name containing the source code, named "pyreptasks", to "src", without creating a "pyreptasks" package inside. This change created a conflict when importing the package, as its name was not anymore "pyreptasks" but "src". This new version solves that oversight by creating a Python package "pyreptasks" inside the "src" folder. 
 
 - Deletion of the file setup.py as it is not needed anymore with the introduction of pyproject.toml
 
