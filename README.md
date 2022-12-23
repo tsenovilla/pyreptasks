@@ -14,7 +14,13 @@ This Python library provides the user with some tools useful to automate coding 
 Installation and usage
 ======================
 
-To install this package use : pip install pyreptasks
+To install this package use : 
+
+% pip install pyreptasks
+
+If you want to install a specific version x.x.x, use:
+
+% pip install pyreptasks==x.x.x
 
 There is not need of other Python packages to correctly run pyreptasks.
 
