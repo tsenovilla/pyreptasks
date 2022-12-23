@@ -1,4 +1,3 @@
 [run]
 omit = 
-    setup.py
-    src/__init__.py
+    src/pyreptasks/__init__.py

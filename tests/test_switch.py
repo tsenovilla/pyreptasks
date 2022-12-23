@@ -2,7 +2,7 @@
 
 # Import of the switch class
 
-from src.switch import Switch
+from pyreptasks import Switch
 
 
 # Definition of some simple functions to be called during the tests.
