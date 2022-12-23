@@ -7,7 +7,7 @@ class Switch:
     Both arguments must be lists of the same length. REMARK: The orders of the lists are important, the first key will execute the first action,
     the second key will execute the second action, and so on.
 
-    There are also three optional arguments that may be provided when creating the object:
+    There are also two optional arguments that may be provided when creating the object:
 
      - use_default_case: <class 'bool'>. Used to determine if a default case is necessary for the switch. By default its value is False.
      - default_case: The action to perform in the default case if use_default_case == True.
