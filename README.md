@@ -1,9 +1,12 @@
 ![PyPI](https://img.shields.io/pypi/v/pyreptasks)
+![GitHub](https://img.shields.io/github/license/tsenovilla/pyreptasks)
 [![CI](https://github.com/tsenovilla/pyreptasks/actions/workflows/ci.yaml/badge.svg)](https://github.com/tsenovilla/pyreptasks/actions/workflows/ci.yaml)
 [![pre-commit](https://github.com/tsenovilla/pyreptasks/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/tsenovilla/pyreptasks/actions/workflows/pre-commit.yaml)
 ![Codecov](https://img.shields.io/codecov/c/gh/tsenovilla/pyreptasks)
-![GitHub](https://img.shields.io/github/license/tsenovilla/pyreptasks)
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/tsenovilla/pyreptasks)
+![PyPI - Downloads](https://img.shields.io/pypi/dd/pyreptasks)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/pyreptasks)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pyreptasks)
 
 
 Description
