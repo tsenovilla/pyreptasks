@@ -574,13 +574,10 @@ def test_10():
         counter += 1
     assert counter == 2
     assert (
-        my_formatter.single_data_to_format("10.0") == "10.0"
-        and my_formatter.single_data_to_format(" 99.99 ") == "99.99"
+        my_formatter.single_data_to_format("20", "Contribution") == "20.0"
+        and my_formatter.single_data_to_format(" 89.99 ", "Contribution") == "89.99"
     )  # Extreme cases tested
-    ##In the previous tests we use 9.9 to throw the exception because if 10 introduced, the formatter will autoconvert it in 10.0!! SO minimum length = 4 is satisfied. Anyway, if we specify length_range = [2,5] it will obviously work
-    assert (
-        my_formatter.single_data_to_format("10", "Contribution") == "10.0"
-    )  ##This works
+    ##In the previous assert, we used 20 to test the minimum length case (4) but it has length 2! Apparently yes, but the formatter convert it to 20.0, so it is ok to test length 4 :)
 
     # value does not fit the specifications
     counter = 0
@@ -600,10 +597,10 @@ def test_10():
     my_formatter.delete_field("Contribution")
 
 
-# Test 10: __alphanum_formatter private method exceptions (they would be thrown from a public method)
+# Test 11: __alphanum_formatter private method exceptions (they would be thrown from a public method)
 
 
-def test_10():
+def test_11():
     my_formatter = DataFormatter()
     my_formatter.add_field("email", alphanumeric_field=True)
     # Input string type error
@@ -658,10 +655,10 @@ def test_10():
     my_formatter.delete_field("Name")
 
 
-# Test 11: __default_formatter private method exceptions (they would be thrown from a public method)
+# Test 12: __default_formatter private method exceptions (they would be thrown from a public method)
 
 
-def test_11():
+def test_12():
     my_formatter = DataFormatter()
     my_formatter.add_field("Name")
     # Input string type error
@@ -690,8 +687,8 @@ def test_11():
     my_formatter.delete_field("Name")
 
 
-# Test 12: __remove_admitted private method exceptions (they would be thrown from a public method)
-def test_12():
+# Test 13: __remove_admitted private method exceptions (they would be thrown from a public method)
+def test_13():
     my_formatter = DataFormatter()
     # An admitted character appears in the input, but it overtake the allowed amount
     my_formatter.add_field(
