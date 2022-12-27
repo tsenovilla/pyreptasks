@@ -1,4 +1,4 @@
-# These tests are designed to proof that the Switch class acts at it is attended.
+# These tests are designed to proof that the Switch class acts as it is attended.
 
 # Import of the switch class
 

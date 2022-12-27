@@ -4,9 +4,6 @@
 [![pre-commit](https://github.com/tsenovilla/pyreptasks/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/tsenovilla/pyreptasks/actions/workflows/pre-commit.yaml)
 ![Codecov](https://img.shields.io/codecov/c/gh/tsenovilla/pyreptasks)
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/tsenovilla/pyreptasks)
-![PyPI - Downloads](https://img.shields.io/pypi/dd/pyreptasks)
-![PyPI - Downloads](https://img.shields.io/pypi/dw/pyreptasks)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/pyreptasks)
 
 
 Description
@@ -100,6 +97,7 @@ Releases are published automatically when a tag is pushed to GitHub:
   export RELEASE=x.x.x
 
   git commit --allow-empty -m "Release $RELEASE"
+  
   git tag -a $RELEASE -m "Version $RELEASE"
 
   git push upstream --tags
