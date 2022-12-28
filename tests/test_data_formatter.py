@@ -293,7 +293,7 @@ def test_4():
     )  # Check that for each wrong configuration a ValueError exception has been thrown
 
     try:  # admitted type error
-        my_formatter.add_field("Name", admitted=[" "])
+        my_formatter.add_field("Name", alphabetic_field=True, admitted=[" "])
     except ValueError:
         pass
     # admitted only allowed if alphabetic or alphanumeric field
@@ -316,17 +316,17 @@ def test_4():
 
     # admitted containing a non-string key
     try:
-        my_formatter.add_field("Name", admitted={3: 1})
+        my_formatter.add_field("Name", alphabetic_field=True, admitted={3: 1})
     except ValueError:
         pass
     # admitted containing a string key longer than 1 character
     try:
-        my_formatter.add_field("Name", admitted={" .": 2})
+        my_formatter.add_field("Name", alphabetic_field=True, admitted={" .": 2})
     except ValueError:
         pass
     # admitted containing an entry with not valid value
     try:
-        my_formatter.add_field("Name", admitted={".": "3"})
+        my_formatter.add_field("Name", alphabetic_field=True, admitted={".": "3"})
     except ValueError:
         pass
     # length_range type error
