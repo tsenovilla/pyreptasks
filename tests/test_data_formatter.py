@@ -557,12 +557,7 @@ def test_10():
     my_formatter.delete_field("Contribution")
 
     # length data does not fit the specifications
-    my_formatter.add_field(
-        "Contribution",
-        float_field=True,
-        length_range=[4, 5],
-        value_range=[19.32, 90.21],
-    )
+    my_formatter.add_field("Contribution", float_field=True, length_range=[4, 5])
     counter = 0
     try:
         my_formatter.single_data_to_format("122.10", "Contribution")
@@ -578,8 +573,10 @@ def test_10():
         and my_formatter.single_data_to_format(" 89.99 ", "Contribution") == "89.99"
     )  # Extreme cases tested
     ##In the previous assert, we used 20 to test the minimum length case (4) but it has length 2! Apparently yes, but the formatter convert it to 20.0, so it is ok to test length 4 :)
+    my_formatter.delete_field("Contribution")
 
     # value does not fit the specifications
+    my_formatter.add_field("Contribution", float_field=True, value_range=[19.32, 90.21])
     counter = 0
     try:
         my_formatter.single_data_to_format("90.22", "Contribution")

@@ -46,7 +46,7 @@ class DataFormatter:
 
         - name: <class 'str'> Contains the name of our field. Example: residence_country.
 
-        - style: <class 'str'> Specification of how data must look. This option is not used when the field is just numeric as it does not make sense. The admitted values for this field are:
+        - style: <class 'str'> Specification of how data must look. This option is just ignored when the field is numeric, as it does not make sense. The admitted values for this field are:
 
             - title: The first character of each substring will be a capital letter. The rest will be converted to lower case. Example: hello woRLd -> Hello World
 
@@ -496,7 +496,7 @@ class DataFormatter:
                 and string.count(admitted_character) > admitted[admitted_character]
             ):
                 raise ValueError(
-                    "the introduced data {} must contain at most {} {}, but it containts {}.".format(
+                    "the introduced data {} must contain at most {} {}, but it contains {}.".format(
                         string,
                         admitted[admitted_character],
                         admitted_character,
